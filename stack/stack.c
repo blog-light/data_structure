@@ -1,11 +1,21 @@
+#include "node.h"
 #include "stack.h"
 
+
 void
-push(DATA *input) {
-	insertNode(tail, input);
+initStack () {
+    initNode();
+    top = tail;
 }
 
 void
-pop() {
-	removeNode(tail->prev);
+push (DATA *input) {
+    NODE *in = (NODE *)calloc(1, sizeof(NODE));
+    in->data = input;
+    insertNode(top, in);
+}
+
+NODE *
+pop () {
+    return removeNode(top->prev);
 }

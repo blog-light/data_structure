@@ -1,6 +1,14 @@
+#ifndef NODE_H
+#define NODE_H
+
 #include "node.h"
 
-static NODE *stack;
 
-void push(DATA *input);
-void pop();
+NODE   *top;
+
+void   initStack ();
+
+void   push (DATA *input);
+NODE * pop  ();
+
+#endif
