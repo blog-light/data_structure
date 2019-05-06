@@ -1,5 +1,5 @@
-#ifndef NODE_H
-#define NODE_H
+#ifndef STACK_H
+#define STACK_H
 
 #include "node.h"
 
